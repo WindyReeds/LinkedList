@@ -10,6 +10,7 @@ template <typename T>
 class LinkedList : public List<T> {
 public:
     LinkedList() : head_(nullptr) {}
+
     void addFront(T* value) override {
         Node<T>* fresh = new Node<T>(value);
         fresh->next = head_;

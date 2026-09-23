@@ -10,7 +10,7 @@ class List {
 public:
     virtual ~List() = default;
 
-    virtual void addFront(T* value) = 0;
+    void addFront(T* value) = 0;
     virtual void deleteFront() = 0;
     virtual bool search(T* value) const = 0;
     virtual void print() const = 0;
